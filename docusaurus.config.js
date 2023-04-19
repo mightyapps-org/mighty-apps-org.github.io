@@ -77,7 +77,7 @@ const config = {
             label: 'Documentation',
           },
           {to: 'https://github.com/mighty-apps-org/mightyappsbuilder/discussions', label: 'Packages', position: 'left'},
-          {to: '/docs/packager', label: 'Community', position: 'left'},
+          {to: '/blog', label: 'Community', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
