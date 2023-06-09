@@ -10,8 +10,8 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Drag-and-Drop Design',
+    Svg: require('@site/static/img/undraw_building_websites_i78t.svg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -20,8 +20,8 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Visual Logic Development',
+    Svg: require('@site/static/img/undraw_thought_process_re_om58.svg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -30,8 +30,75 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Live Preview Testing',
+    Svg: require('@site/static/img/undraw_mobile_testing_re_w7yb.svg').default,
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+];
+
+
+const SecondFeatureList: FeatureItem[] = [
+  {
+    title: 'Powerful Web Features',
+    Svg: require('@site/static/img/undraw_next_js_-8-g5m.svg').default,
+    description: (
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
+    ),
+  },
+  {
+    title: 'Custom React Components',
+    Svg: require('@site/static/img/undraw_react_re_g3ui.svg').default,
+    description: (
+      <>
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
+      </>
+    ),
+  },
+  {
+    title: 'Responsive Cross-Platform',
+    Svg: require('@site/static/img/undraw_devices_re_dxae.svg').default,
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+];
+
+const SecondFeatureListTwo: FeatureItem[] = [
+  {
+    title: 'Mobile SDKs and Plugins',
+    Svg: require('@site/static/img/undraw_android_jr64.svg').default,
+    description: (
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
+    ),
+  },
+  {
+    title: 'Custom React Components',
+    Svg: require('@site/static/img/undraw_react_re_g3ui.svg').default,
+    description: (
+      <>
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
+      </>
+    ),
+  },
+  {
+    title: 'Responsive Cross-Platform',
+    Svg: require('@site/static/img/undraw_devices_re_dxae.svg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -59,13 +126,21 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
+        <h2>🖼 Design and Development</h2>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
+        <br />
+        <h2>🚀 Building and Deployment</h2>
         <div className="row">
-          {FeatureList.map((props, idx) => (
+          {SecondFeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+        <div className="row">
+          {SecondFeatureListTwo.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>

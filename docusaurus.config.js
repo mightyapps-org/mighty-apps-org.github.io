@@ -6,12 +6,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Mighty Apps Docs',
-  tagline: 'Dinosaurs are cool',
+  title: ' Mighty Apps Docs',
+  tagline: '🎉 Mighty Apps Builder is an open-source cross-platform app builder 🥳',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://mighty-apps-org.github.io',
+  url: 'https://mightyapps-org.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -38,6 +38,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // currentVersion: 'current',
+          versions: {
+            current: {
+              label: 'latest',
+              path: 'next',
+            },
+          },
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -76,14 +83,22 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: 'https://github.com/mighty-apps-org/mightyappsbuilder/discussions', label: 'Packages', position: 'left'},
-          {to: '/blog', label: 'Community', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/docs/category/packages', label: 'Packages', position: 'left' },
+          { to: 'https://github.com/mighty-apps-org/mightyappsbuilder/discussions', label: 'Community', position: 'left' },
+          { to: '/blog', label: 'Blog', position: 'left' },
+
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            // dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            // dropdownActiveClassDisabled: true,
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
+
         ],
       },
       footer: {
@@ -129,7 +144,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Made with ♥ by Mighty Apps. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Made with ♥ using Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
