@@ -11,8 +11,8 @@
       ],
       "link": {
         "type": "generated-index",
-        "title": "Introduction",
-        "description": "Learn about the most important Docusaurus concepts!",
+        "title": "Getting Started",
+        "description": "Learn more about Mighty Apps Builder concepts.",
         "slug": "/category/docusaurus-guides",
         "keywords": ["guides"],
         "image": "/img/docusaurus.png"
