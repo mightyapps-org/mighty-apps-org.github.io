@@ -20,6 +20,10 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'mighty-apps-org', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
+  themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    mermaid: true,
+  },
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
